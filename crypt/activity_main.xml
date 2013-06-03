@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GreenYellow"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_text"
+        android:textSize="@dimen/intro_size"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@color/steel_blue"
+        android:text="@string/encrypt"
+        android:textColor="@color/maroon"
+        android:textSize="@dimen/button_text"
+        android:onClick="EncryptText" />
+
+    <Button
+        android:id="@+id/decrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/encrypt"
+        android:layout_below="@+id/encrypt"
+        android:layout_marginTop="36dp"
+        android:background="@color/steel_blue"
+        android:text="@string/decrypt"
+        android:textColor="@color/maroon"
+        android:textSize="@dimen/button_text"
+        android:onClick="DecryptText" />
+
+    <Button
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decrypt"
+        android:layout_below="@+id/decrypt"
+        android:layout_marginTop="36dp"
+        android:background="@color/steel_blue"
+        android:text="@string/instructions"
+        android:textColor="@color/maroon"
+        android:textSize="@dimen/button_text" 
+        android:onClick="Instructions"/>
+
+</RelativeLayout>
